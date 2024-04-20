@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* HEADER START*/
+
+header {
+  margin: auto;
+  width: 1200px;
+  background-color: #ffb8ca;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 199px;
+  height: 50px;
+  position: relative;
+}
+
+.logo:hover {
+  top: -2px;
+  transition: all 500ms ease;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-list li > a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+
+.nav-list li:hover > a,
+.nav-list li:focus > a {
+  color: #d41443;
+  cursor: pointer;
+  top: -2px;
+  transition: all 500ms ease;
+}
+
+.buy-now-button {
+  width: 159px;
+  height: 44px;
+
+  background-color: #fff;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #d41443;
+
+  border: none;
+  border-radius: 50px;
+
+  position: relative;
+}
+
+.buy-now-button:hover,
+.buy-now-button:focus {
+  background-color: #d41443;
+  color: #fff;
+  transition: all 500ms ease;
+  top: -2px;
+}
+
+/* HEADER END*/
+
+/* MAIN START */
+/* MAIN END */
