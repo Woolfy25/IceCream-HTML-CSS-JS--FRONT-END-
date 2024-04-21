@@ -70,7 +70,7 @@
   }
 
   .hero-page-p-pasion {
-    width: 70%;
+    width: 80%;
     font-family: "Titan One", sans-serif;
     font-weight: 400;
     font-size: 26px;
@@ -156,6 +156,192 @@
   /* HEADER END*/
 
   /* MAIN START */
+
+  /* SECTION 2 START */
+  .section-two {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 17px 50px 17px;
+  }
+
+  .section-two-titles {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .section-two-titles > p {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+  }
+
+  .section-two-titles > h2 {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+  }
+
+  .section-two-div-products-list {
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    align-items: center;
+
+    padding: 10px 0px 0px 0px;
+  }
+
+  .section-two-products-list {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .section-two-products-list-items-first {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 30px;
+
+    position: relative;
+  }
+
+  .section-two-products-list-items-second {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 30px;
+
+    position: relative;
+  }
+  .section-two-products-list-items-third {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 30px;
+
+    position: relative;
+  }
+
+  .products-list-items-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .products-list-items-background-ice-cream {
+    background-color: #ffb8ca;
+    min-width: 90%;
+    height: 489px;
+
+    border-radius: 20px;
+
+    position: absolute;
+
+    z-index: -1;
+
+    bottom: 0px;
+  }
+
+  .products-list-items-background-ice-coffe {
+    background-color: #f0d1a5;
+    min-width: 90%;
+    height: 489px;
+
+    border-radius: 20px;
+
+    position: absolute;
+
+    z-index: -1;
+
+    bottom: 0px;
+  }
+
+  .products-list-items-background-milkshake {
+    background-color: #c2e297;
+    min-width: 90%;
+    height: 489px;
+
+    border-radius: 20px;
+
+    position: absolute;
+
+    z-index: -1;
+
+    bottom: 0px;
+  }
+
+  .products-list-items-title {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+
+    /* padding-top: 20px; */
+  }
+
+  .products-list-items-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+
+    width: 80%;
+  }
+
+  .products-list-items-button {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50px;
+    border: none;
+
+    color: #d41443;
+    background-color: #fff;
+
+    margin-bottom: 40px;
+  }
+
+  /* SECTION 2 END */
 
   /* MAIN END */
 }
