@@ -343,5 +343,153 @@
 
   /* SECTION 2 END */
 
+  /* SECTION 3 START */
+
+  .section-three {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff5f6;
+
+    padding: 50px 17px 50px 17px;
+
+    gap: 30px;
+  }
+
+  .section-three-div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+  }
+
+  .section-three-div > p {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+  }
+
+  .section-three-div > h2 {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+
+    width: 90%;
+  }
+
+  .section-three-div-cow-milk {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    position: relative;
+  }
+
+  .section-three-cow-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .section-three-p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    letter-spacing: 0.04em;
+    color: #000;
+
+    width: 70%;
+  }
+
+  .section-three-p-two {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    letter-spacing: 0.04em;
+    color: #907e82;
+
+    width: 70%;
+  }
+
+  .section-three-button {
+    width: 176px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #d41443;
+  }
+
+  .section-three-button:hover,
+  .section-three-button:focus {
+    background-color: #ffdede;
+  }
+
+  .section-three-informations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-three-informations-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+  }
+
+  .informations-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+
+  .informations-list-title {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .informations-list-p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    color: #000;
+
+    width: 80%;
+  }
+
+  /* SECTION 3 END */
+
   /* MAIN END */
 }
