@@ -7,84 +7,155 @@
   text-decoration: none;
 }
 
-/* HEADER START*/
+/* PHONE FIRST */
+@media screen and (max-width: 428px) {
+  /* HEADER START*/
+  header {
+    width: 100%;
+  }
 
-header {
-  margin: auto;
-  width: 1200px;
-  background-color: #ffb8ca;
+  .header {
+    background-color: #ffb8ca;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding: 10px 17px 0px 17px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: block;
+    width: 199px;
+    height: 50px;
+    position: relative;
+
+    transition: all 500ms ease;
+  }
+
+  .logo:hover,
+  .logo:focus {
+    top: 2px;
+  }
+
+  .burger-menu {
+    width: 20px;
+    height: 12px;
+  }
+
+  .hero-page {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+  }
+
+  .hero-items-div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    margin: 150px 0px 150px 0px;
+  }
+
+  .hero-buttons-div {
+    display: flex;
+    gap: 10px;
+  }
+
+  .hero-page-p-pasion {
+    width: 70%;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+
+    z-index: 3;
+  }
+
+  .hero-page-p-pasion > span {
+    font-family: "Titan One", sans-serif;
+    font-size: 48px;
+    line-height: 96%;
+    color: #d41443;
+  }
+
+  .hero-page-products-button {
+    width: 62px;
+    height: 24px;
+
+    font-weight: 400;
+    font-size: 8px;
+    text-align: center;
+    color: #fff;
+    background-color: #d41443;
+
+    border: none;
+    border-radius: 50px;
+
+    z-index: 3;
+    transition: all 500ms ease;
+  }
+
+  .hero-page-products-button:hover,
+  .hero-page-products-button:focus {
+    background-color: #fff;
+    color: #d41443;
+  }
+
+  .hero-page-howitsmade-button {
+    width: 82px;
+    height: 24px;
+
+    font-weight: 400;
+    font-size: 8px;
+    text-align: center;
+    color: #d41443;
+
+    border: none;
+    border-radius: 50px;
+
+    z-index: 3;
+    transition: all 500ms ease;
+  }
+
+  .hero-page-howitsmade-button:hover,
+  .hero-page-howitsmade-button:focus {
+    background-color: #ffdede;
+  }
+
+  .image-ice-cream-stack {
+    position: absolute;
+
+    bottom: 0px;
+    right: 20px;
+
+    width: 171px;
+    height: 410px;
+
+    z-index: 2;
+  }
+
+  .hero-big-circle-svg {
+    right: -17px;
+    top: 40px;
+
+    position: absolute;
+
+    z-index: 1;
+  }
+
+  /* HEADER END*/
+
+  /* MAIN START */
+
+  /* MAIN END */
 }
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 40px 20px;
-}
-
-.logo {
-  width: 199px;
-  height: 50px;
-  position: relative;
-}
-
-.logo:hover {
-  top: -2px;
-  transition: all 500ms ease;
-}
-
-.navigation {
-  display: flex;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.nav-list li > a {
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
-  position: relative;
-}
-
-.nav-list li:hover > a,
-.nav-list li:focus > a {
-  color: #d41443;
-  cursor: pointer;
-  top: -2px;
-  transition: all 500ms ease;
-}
-
-.buy-now-button {
-  width: 159px;
-  height: 44px;
-
-  background-color: #fff;
-
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: #d41443;
-
-  border: none;
-  border-radius: 50px;
-
-  position: relative;
-}
-
-.buy-now-button:hover,
-.buy-now-button:focus {
-  background-color: #d41443;
-  color: #fff;
-  transition: all 500ms ease;
-  top: -2px;
-}
-
-/* HEADER END*/
-
-/* MAIN START */
-/* MAIN END */
