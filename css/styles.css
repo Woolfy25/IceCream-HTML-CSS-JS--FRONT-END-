@@ -491,5 +491,331 @@
 
   /* SECTION 3 END */
 
+  /* SECTION 4 START */
+  .group-image {
+    width: 100%;
+  }
+  /* SECTION 4 END */
+
+  /* SECTION 5 START */
+
+  .reviews {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 44px;
+  }
+
+  .user-review {
+    margin-top: 70px;
+
+    width: 157px;
+    height: 213px;
+
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 260%; /* 31.2px */
+    letter-spacing: 0.48px;
+  }
+
+  .reviews-slider {
+    margin-top: 60px;
+    color: red;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .user-information {
+    margin-top: 16px;
+
+    width: 172px;
+    height: 25px;
+
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 26.04px */
+  }
+
+  /* SECTION 5 END */
+
+  /* SECTION 6 START */
+
+  .locations {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .locations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    padding: 40px 0px 40px 32px;
+
+    width: 280px;
+    height: 412px;
+
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  .location-title {
+    border-radius: 4px;
+    background: #f0d1a5;
+
+    width: 80px;
+    height: 16px;
+
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+    letter-spacing: 0.48px;
+  }
+
+  .green {
+    background: #c2e297;
+  }
+
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .location-info h3 {
+    width: 75px;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+    letter-spacing: 0.48px;
+  }
+
+  .location-info p {
+    width: 216px;
+    height: 36px;
+
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.48px;
+  }
+
+  .location-available {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .location-available-days {
+    width: 150px;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+  }
+
+  .location-available-hours {
+    width: 161px;
+    height: 23px;
+
+    color: #ffa5ba;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+  }
+
+  .location-contact {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-contact a {
+    width: 179px;
+    height: 18px;
+
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+  }
+
+  .locations-buttons-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .locations-button {
+    border: none;
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background: #d41342;
+
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .locations-button:hover,
+  .locations-button:focus {
+    background-color: #fff;
+    color: #d41443;
+  }
+
+  .franchise-button {
+    border: none;
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background: #fff;
+
+    color: #d41342;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .franchise-button:hover,
+  .franchise-button:focus {
+    background-color: #ffdede;
+  }
+
+  /* SECTION 6 END */
+
   /* MAIN END */
+
+  /* FOOTER START */
+
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .footer-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-slogan p {
+    width: 232px;
+    height: 42px;
+    color: #ffa5ba;
+    font-family: "Titan One";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .footer-slogan h3 {
+    width: 200px;
+    height: 76px;
+    color: #d41443;
+    font-family: "Titan One";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+  }
+
+  .footer-contacts {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+  }
+
+  .footer-contacts a {
+    color: #d41443;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+  }
+
+  .footer-contacts a span {
+    color: #000;
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%; /* 22.32px */
+  }
+
+  .copyright {
+    margin-top: 56px;
+    width: 280px;
+    color: #907e82;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 152%; /* 21.28px */
+  }
+
+  /* FOOTER END */
 }
