@@ -153,6 +153,14 @@
     z-index: 1;
   }
 
+  .header-buynow {
+    display: none;
+  }
+
+  .header-absolute {
+    display: none;
+  }
+
   /* HEADER END*/
 
   /* MAIN START */
@@ -818,4 +826,270 @@
   }
 
   /* FOOTER END */
+}
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  /* HEADER START */
+  header {
+    width: 100%;
+  }
+
+  .header {
+    background-color: #ffb8ca;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding: 32px 32px 0px 32px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .header-buynow {
+    width: 160px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    background: #fff;
+    color: #d41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .header-buynow:hover,
+  .header-buynow:focus {
+    background-color: #ffdede;
+  }
+
+  .hero-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .hero-items-div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    margin: 20px 0px 190px 0px;
+  }
+
+  .hero-page-p-pasion {
+    width: 162px;
+    color: #fff;
+    font-family: "Titan One";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+
+  .hero-page-p-pasion > span {
+    color: #d41443;
+    font-family: "Titan One";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90.5%;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+  }
+
+  .hero-buttons-div {
+    display: flex;
+    gap: 10px;
+  }
+
+  .hero-page-products-button {
+    width: 62px;
+    height: 24px;
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #d41443;
+    border-radius: 50px;
+  }
+
+  .hero-page-products-button:hover,
+  .hero-page-products-button:focus {
+    background-color: #fff;
+    color: #d41443;
+  }
+
+  .hero-page-howitsmade-button {
+    width: 83px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 8px;
+    text-align: center;
+    color: #d41443;
+    border: none;
+    border-radius: 50px;
+    z-index: 3;
+    transition: all 500ms ease;
+  }
+
+  .hero-page-howitsmade-button:hover,
+  .hero-page-howitsmade-button:focus {
+    background-color: #ffdede;
+  }
+
+  .image-ice-cream-stack {
+    position: absolute;
+
+    bottom: 0px;
+    left: 50%;
+
+    width: 143px;
+    height: 336px;
+
+    z-index: 2;
+  }
+
+  .hero-big-circle-svg {
+    width: 335px;
+    height: 335px;
+
+    left: 250px;
+    bottom: 40px;
+
+    position: absolute;
+
+    z-index: 1;
+  }
+
+  .bio-milk {
+    position: absolute;
+    bottom: 16px;
+  }
+
+  .header-icecream-text {
+    position: absolute;
+    left: 150px;
+    bottom: 81px;
+
+    width: 114px;
+    height: 48px;
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 12px */
+
+    z-index: 4;
+  }
+
+  .tasty-woman {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+
+    z-index: 4;
+  }
+
+  .number-of-stores {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .number-of-cafes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number-of-cafes h3 {
+    color: #d41443;
+    text-align: right;
+    font-family: "Titan One";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+
+    z-index: 3;
+  }
+
+  .number-of-cafes p {
+    color: #fff;
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .number-of-cafes svg {
+    position: absolute;
+    top: 0;
+    right: -5px;
+  }
+
+  .number-of-foodtrucks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number-of-foodtrucks h3 {
+    color: #d41443;
+    text-align: right;
+    font-family: "Titan One";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+
+    z-index: 3;
+  }
+
+  .number-of-foodtrucks p {
+    color: #fff;
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .number-of-foodtrucks svg {
+    position: absolute;
+    top: 0;
+    right: -5px;
+  }
+  /* HEADER END */
 }
