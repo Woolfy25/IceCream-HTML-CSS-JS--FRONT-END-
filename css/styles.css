@@ -253,6 +253,7 @@
 
     position: relative;
   }
+
   .section-two-products-list-items-third {
     display: flex;
     flex-direction: column;
@@ -1092,4 +1093,162 @@
     right: -5px;
   }
   /* HEADER END */
+
+  /* MAIN START */
+  .section-two {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 32px 0px 32px;
+  }
+
+  .section-two-titles {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 18px;
+  }
+
+  .section-two-titles > p {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+  }
+
+  .section-two-titles > h2 {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+  }
+
+  .section-two-div-products-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .section-two-products-list-items-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  .products-list-items-img {
+    width: 224px;
+    height: 224px;
+  }
+
+  .products-list-items-background-ice-cream {
+    background-color: #ffb8ca;
+    min-width: 224px;
+    height: 473px;
+    border-radius: 20px;
+
+    position: absolute;
+
+    z-index: -1;
+
+    bottom: 0px;
+  }
+
+  .products-list-items-title {
+    color: #fff;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .products-list-items-text {
+    width: 188px;
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 176%; /* 24.64px */
+    letter-spacing: 0.56px;
+  }
+
+  .products-list-items-button {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50px;
+    border: none;
+
+    color: #d41443;
+    background-color: #fff;
+
+    margin-bottom: 40px;
+  }
+
+  .section-two-products-list-items-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  .products-list-items-background-ice-coffe {
+    background-color: #f0d1a5;
+    min-width: 224px;
+    height: 473px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  .section-two-products-list-items-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  .products-list-items-background-milkshake {
+    background-color: #c2e297;
+    min-width: 224px;
+    height: 473px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  /* MAIN END */
 }
