@@ -1749,3 +1749,468 @@
 
   /* FOOTER END */
 }
+
+@media screen and (min-width: 769px) {
+  /* HEADER START */
+  header {
+    width: 100%;
+  }
+
+  .header {
+    position: relative;
+    /* z-index: -5; */
+    background-color: #ffb8ca;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding: 32px 32px 0px 32px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-bar-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .nav-bar-links li a {
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .nav-right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .header-buynow {
+    width: 160px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    background: #fff;
+    color: #d41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .header-buynow:hover,
+  .header-buynow:focus {
+    background-color: #ffdede;
+  }
+
+  .hero-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .hero-items-div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin: 60px 0px 315px 0px;
+  }
+
+  .hero-page-p-pasion {
+    width: 277px;
+    color: #fff;
+    font-family: "Titan One";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+
+  .hero-page-p-pasion > span {
+    color: #d41443;
+    font-family: "Titan One";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90.5%;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+  }
+
+  .hero-buttons-div {
+    display: flex;
+    gap: 12px;
+  }
+
+  .hero-page-products-button {
+    width: 107px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #d41443;
+
+    border: none;
+    border-radius: 50px;
+  }
+
+  .hero-page-products-button:hover,
+  .hero-page-products-button:focus {
+    background-color: #fff;
+    color: #d41443;
+  }
+
+  .hero-page-howitsmade-button {
+    width: 136px;
+    height: 40px;
+    color: #d41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    border: none;
+    border-radius: 50px;
+    z-index: 3;
+    transition: all 500ms ease;
+  }
+
+  .hero-page-howitsmade-button:hover,
+  .hero-page-howitsmade-button:focus {
+    background-color: #ffdede;
+  }
+
+  .image-ice-cream-stack {
+    position: absolute;
+
+    bottom: 0px;
+    left: 50%;
+
+    width: 236px;
+    height: 557px;
+
+    z-index: 2;
+  }
+
+  .hero-big-circle-svg {
+    width: 534px;
+    height: 534px;
+
+    left: 350px;
+    bottom: 84px;
+
+    position: absolute;
+
+    z-index: -1;
+  }
+
+  .bio-milk {
+    width: 213px;
+    height: 216px;
+    position: absolute;
+    bottom: 60px;
+  }
+
+  .header-icecream-text {
+    position: absolute;
+    left: 200px;
+    bottom: 130px;
+
+    width: 200px;
+    height: 78px;
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+
+    z-index: 4;
+  }
+
+  .tasty-woman {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+
+    width: 304px;
+    height: 241px;
+
+    z-index: 4;
+  }
+
+  .number-of-stores {
+    position: absolute;
+    top: 70px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .number-of-cafes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number-of-cafes h3 {
+    color: #d41443;
+    text-align: right;
+    font-family: "Titan One";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    text-transform: uppercase;
+
+    z-index: 3;
+  }
+
+  .number-of-cafes p {
+    color: #fff;
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .number-of-cafes svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+
+  .number-of-foodtrucks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number-of-foodtrucks h3 {
+    color: #d41443;
+    text-align: right;
+    font-family: "Titan One";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    text-transform: uppercase;
+
+    z-index: 3;
+  }
+
+  .number-of-foodtrucks p {
+    color: #fff;
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .number-of-foodtrucks svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+  /* HEADER END */
+
+  /* MAIN START */
+
+  /* SECTION 2 START */
+
+  .section-two {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 16px 0px 16px;
+  }
+
+  .section-two-titles {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+  }
+
+  .section-two-titles > p {
+    color: #ffa5ba;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  .section-two-titles > h2 {
+    color: #d41443;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.48px;
+    text-transform: uppercase;
+  }
+
+  .section-two-div-products-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .section-two-products-list-items-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  .products-list-items-img {
+    width: 368px;
+    height: 368px;
+  }
+
+  .products-list-items-background-ice-cream {
+    background-color: #ffb8ca;
+    width: 368px;
+    height: 535px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  .products-list-items-title {
+    color: #fff;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  .products-list-items-text {
+    width: 304px;
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 176%; /* 28.16px */
+    letter-spacing: 0.64px;
+  }
+
+  .products-list-items-button {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50px;
+    border: none;
+
+    color: #d41443;
+    background-color: #fff;
+
+    margin-bottom: 60px;
+  }
+
+  .section-two-products-list-items-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  .products-list-items-background-ice-coffe {
+    background-color: #f0d1a5;
+    width: 368px;
+    height: 535px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+  }
+
+  .section-two-products-list-items-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  .products-list-items-background-milkshake {
+    background-color: #c2e297;
+    width: 368px;
+    height: 535px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+  }
+  /* SECTION 2 END */
+
+  /* SECTION 3 START */
+}
