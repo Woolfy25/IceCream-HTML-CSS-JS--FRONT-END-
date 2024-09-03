@@ -2213,4 +2213,505 @@
   /* SECTION 2 END */
 
   /* SECTION 3 START */
+
+  /* SECTION 3 START */
+
+  .section-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff5f6;
+    padding: 100px 16px 60px 16px;
+    gap: 60px;
+  }
+
+  .section-three-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .section-three-div > p {
+    color: #ffa5ba;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  .section-three-div > h2 {
+    color: #d41443;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.48px;
+    text-transform: uppercase;
+  }
+
+  .section-three-div-cow-milk {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 99px;
+    position: relative;
+  }
+
+  .section-three-cow-image {
+    width: 501px;
+    height: 501px;
+  }
+
+  .section-three-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .section-three-p {
+    max-width: 400px;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 176%; /* 28.16px */
+    letter-spacing: 0.64px;
+  }
+
+  .section-three-p-two {
+    max-width: 400px;
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 194%; /* 27.16px */
+    letter-spacing: 0.56px;
+  }
+
+  .section-three-button {
+    width: 176px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+
+    color: #d41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .section-three-button:hover,
+  .section-three-button:focus {
+    background-color: #ffdede;
+  }
+
+  .section-three-informations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-three-informations-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 40px;
+  }
+
+  .informations-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 17px;
+  }
+
+  .informations-list-title {
+    color: #d41443;
+    text-align: right;
+    font-family: "Titan One";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+  }
+
+  .informations-list-p {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 176%; /* 28.16px */
+    letter-spacing: 0.32px;
+  }
+
+  /* SECTION 3 END */
+
+  /* SECTION 4 START */
+
+  .group-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+  }
+  /* SECTION 4 END */
+
+  /* SECTION 5 START */
+
+  .reviews {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 44px;
+  }
+
+  .user-review {
+    margin-top: 63px;
+
+    max-width: 750px;
+
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
+  .reviews-slider {
+    margin-top: 47px;
+    color: red;
+    font-weight: 800;
+    font-size: 35px;
+  }
+
+  .user-information {
+    margin-top: 16px;
+
+    width: 190px;
+    height: 31px;
+
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 37.2px */
+  }
+
+  /* SECTION 5 END */
+
+  /* SECTION 6 START */
+
+  .locations {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .locations-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    padding: 40px 0px 40px 40px;
+
+    width: 368px;
+    /* height: 528px; */
+
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  .location-title {
+    border-radius: 4px;
+    background: #f0d1a5;
+
+    width: 80px;
+    height: 28px;
+
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
+  .green {
+    width: 138px;
+    background: #c2e297;
+  }
+
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 8px;
+  }
+
+  .location-info h3 {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
+  .location-info p {
+    max-width: 288px;
+    height: 65px;
+
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%; /* 29.28px */
+    letter-spacing: 0.64px;
+  }
+
+  .location-available {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .location-available-days {
+    width: 170px;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
+  .location-available-hours {
+    width: 170px;
+    height: 23px;
+
+    color: #ffa5ba;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+  }
+
+  .location-contact {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-contact a {
+    width: 179px;
+    height: 18px;
+
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%; /* 29.28px */
+  }
+
+  .locations-buttons-list {
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .locations-button {
+    border: none;
+    width: 198px;
+    height: 44px;
+    border-radius: 22px;
+    background: #d41342;
+
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .locations-button:hover,
+  .locations-button:focus {
+    background-color: #fff;
+    color: #d41443;
+  }
+
+  .franchise-button {
+    border: none;
+    width: 174px;
+    height: 44px;
+    border-radius: 22px;
+    background: #fff;
+
+    color: #d41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .franchise-button:hover,
+  .franchise-button:focus {
+    background-color: #ffdede;
+  }
+  /* SECTION 6 END */
+
+  /* MAIN END */
+
+  /* FOOTER START */
+
+  .footer {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+
+  .footer-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-slogan p {
+    max-width: 475px;
+    color: #ffa5ba;
+    font-family: "Titan One";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  .footer-slogan h3 {
+    max-width: 480px;
+    color: #d41443;
+    font-family: "Titan One";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.48px;
+    text-transform: uppercase;
+  }
+
+  .footer-contacts {
+    margin-top: 15px;
+    /* margin-bottom: 56px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+  }
+
+  .footer-contacts a {
+    color: #d41443;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.32px;
+  }
+
+  .footer-contacts a span {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.32px;
+  }
+
+  .copyright {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%; /* 26.04px */
+    letter-spacing: 0.28px;
+  }
+
+  /* FOOTER END */
 }
