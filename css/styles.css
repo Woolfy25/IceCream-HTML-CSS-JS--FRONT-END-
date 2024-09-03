@@ -758,6 +758,11 @@
     padding: 0px 20px;
   }
 
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .footer-slogan {
     display: flex;
     flex-direction: column;
@@ -792,6 +797,7 @@
 
   .footer-contacts {
     margin-top: 40px;
+    margin-bottom: 56px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -818,7 +824,7 @@
   }
 
   .copyright {
-    margin-top: 56px;
+    margin: auto;
     width: 280px;
     color: #907e82;
     text-align: center;
@@ -1413,5 +1419,333 @@
   }
   /* SECTION 4 END */
 
+  /* SECTION 5 START */
+
+  .reviews {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 44px;
+  }
+
+  .user-review {
+    margin-top: 57px;
+    width: 492px;
+    height: 83px;
+
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 214%; /* 29.96px */
+    letter-spacing: 0.56px;
+  }
+
+  .reviews-slider {
+    margin-top: 40px;
+    color: red;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .user-information {
+    margin-top: 16px;
+
+    width: 172px;
+    height: 25px;
+
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+  }
+
+  /* SECTION 5 END */
+
+  /* SECTION 6 START */
+
+  .locations {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .locations-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    padding: 40px 0px 40px 32px;
+
+    width: 224px;
+    /* height: 528px; */
+
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  }
+
+  .location-title {
+    border-radius: 4px;
+    background: #f0d1a5;
+
+    width: 80px;
+    height: 28px;
+
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
+  .green {
+    width: 138px;
+    background: #c2e297;
+  }
+
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 12px;
+  }
+
+  .location-info h3 {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 26.04px */
+    letter-spacing: 0.56px;
+  }
+
+  .location-info p {
+    width: 176px;
+    height: 65px;
+
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166%; /* 23.24px */
+    letter-spacing: 0.56px;
+  }
+
+  .location-available {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .location-available-days {
+    width: 150px;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+  }
+
+  .location-available-hours {
+    width: 161px;
+    height: 23px;
+
+    color: #ffa5ba;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+  }
+
+  .location-contact {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-contact a {
+    width: 179px;
+    height: 18px;
+
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+  }
+
+  .locations-buttons-list {
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .locations-button {
+    border: none;
+    width: 192px;
+    height: 44px;
+    border-radius: 22px;
+    background: #d41342;
+
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .locations-button:hover,
+  .locations-button:focus {
+    background-color: #fff;
+    color: #d41443;
+  }
+
+  .franchise-button {
+    border: none;
+    width: 174px;
+    height: 44px;
+    border-radius: 22px;
+    background: #fff;
+
+    color: #d41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .franchise-button:hover,
+  .franchise-button:focus {
+    background-color: #ffdede;
+  }
+  /* SECTION 6 END */
+
   /* MAIN END */
+
+  /* FOOTER START */
+
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+
+  .footer-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-slogan p {
+    max-width: 340px;
+    color: #ffa5ba;
+    font-family: "Titan One";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+  }
+
+  .footer-slogan h3 {
+    max-width: 340px;
+    color: #d41443;
+    font-family: "Titan One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+  }
+
+  .footer-contacts {
+    margin-top: 60px;
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+  }
+
+  .footer-contacts a {
+    color: #d41443;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+  }
+
+  .footer-contacts a span {
+    color: #000;
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%; /* 26.04px */
+  }
+
+  .copyright {
+    margin: auto;
+    width: 280px;
+    color: #907e82;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%; /* 26.04px */
+    letter-spacing: 0.28px;
+  }
+
+  /* FOOTER END */
 }
