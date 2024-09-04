@@ -1751,9 +1751,14 @@
 }
 
 @media screen and (min-width: 769px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+
   /* HEADER START */
   header {
-    width: 100%;
+    max-width: 100%;
   }
 
   .header {
@@ -1920,13 +1925,20 @@
   .hero-big-circle-svg {
     width: 534px;
     height: 534px;
+    /* fill: #ffa5ba; */
 
     left: 350px;
     bottom: 84px;
 
     position: absolute;
 
-    z-index: -1;
+    z-index: 10;
+  }
+
+  .hero-big-circle-svg use {
+    width: 534px;
+    height: 534px;
+    /* fill: #ffa5ba; */
   }
 
   .bio-milk {
