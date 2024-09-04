@@ -1762,8 +1762,6 @@
   }
 
   .header {
-    position: relative;
-    /* z-index: -5; */
     background-color: #ffb8ca;
     display: flex;
     justify-content: space-between;
@@ -1773,15 +1771,21 @@
   }
 
   .nav-bar {
+    position: relative;
+    z-index: 5;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
   }
 
   .nav-bar-links {
+    width: 500px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 35px;
+    /* gap: 35px; */
   }
 
   .nav-bar-links li a {
@@ -1830,6 +1834,8 @@
     position: relative;
   }
   .hero-items-div {
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -1925,20 +1931,21 @@
   .hero-big-circle-svg {
     width: 534px;
     height: 534px;
-    /* fill: #ffa5ba; */
+    /* color: #000; */
+    fill: #ffa5ba;
 
-    left: 350px;
+    right: 100px;
+    /* left: 450px; */
     bottom: 84px;
 
     position: absolute;
 
-    z-index: 10;
+    /* z-index: 10; */
   }
 
-  .hero-big-circle-svg use {
+  .hero-big-circle-svg-use {
     width: 534px;
     height: 534px;
-    /* fill: #ffa5ba; */
   }
 
   .bio-milk {
@@ -1962,7 +1969,7 @@
     font-weight: 400;
     line-height: 140%; /* 19.6px */
 
-    z-index: 4;
+    z-index: 6;
   }
 
   .tasty-woman {
@@ -2075,7 +2082,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 60px 16px 0px 16px;
+    padding: 60px 16px 50px 16px;
   }
 
   .section-two-titles {
@@ -2234,8 +2241,12 @@
     justify-content: center;
     align-items: center;
     background-color: #fff5f6;
-    padding: 100px 16px 60px 16px;
+    padding: 60px 16px 60px 16px;
     gap: 60px;
+    background-image: url("../images/background-howmade-big.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
 
   .section-three-div {
@@ -2271,17 +2282,17 @@
   }
 
   .section-three-div-cow-milk {
+    width: auto;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    gap: 99px;
+    gap: 90px;
     position: relative;
   }
 
   .section-three-cow-image {
-    width: 501px;
-    height: 501px;
+    max-width: 501px;
+    max-height: 501px;
   }
 
   .section-three-aside {
@@ -2356,6 +2367,18 @@
     justify-content: center;
     align-items: flex-start;
     gap: 17px;
+  }
+
+  .informations-list-svg {
+    width: 50px;
+    height: 50px;
+    /* stroke: #ffa5ba; */
+  }
+
+  .informations-list-svg-use {
+    width: 50px;
+    height: 50px;
+    /* stroke: #ffa5ba; */
   }
 
   .informations-list-title {
