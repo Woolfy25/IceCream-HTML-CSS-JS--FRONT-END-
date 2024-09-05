@@ -173,7 +173,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 50px 17px 50px 17px;
   }
 
@@ -181,16 +180,12 @@
     width: auto;
     display: flex;
     flex-direction: column;
-
-    /* justify-content: center; */
     align-items: center;
-
     gap: 20px;
   }
 
   .section-two-titles > p {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
+    font-family: var(--secondary-font);
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -198,72 +193,57 @@
   }
 
   .section-two-titles > h2 {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
+    font-family: var(--secondary-font);
     font-size: 34px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
-    color: #d41443;
+    color: var(--main-red);
   }
 
   .section-two-div-products-list {
     display: flex;
     flex-direction: column;
-
-    /* justify-content: center; */
     align-items: center;
-
     padding: 10px 0px 0px 0px;
   }
 
   .section-two-products-list {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     gap: 10px;
   }
 
   .section-two-products-list-items-first {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    gap: 30px;
-
+    gap: 32px;
     position: relative;
   }
 
   .section-two-products-list-items-second {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    gap: 30px;
-
+    gap: 32px;
     position: relative;
   }
 
   .section-two-products-list-items-third {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    gap: 30px;
-
+    gap: 32px;
     position: relative;
   }
 
@@ -276,54 +256,42 @@
     background-color: #ffb8ca;
     min-width: 90%;
     height: 489px;
-
     border-radius: 20px;
-
     position: absolute;
-
     z-index: -1;
-
     bottom: 0px;
+    transition: all 250ms ease;
   }
 
   .products-list-items-background-ice-coffe {
     background-color: #f0d1a5;
     min-width: 90%;
     height: 489px;
-
     border-radius: 20px;
-
     position: absolute;
-
     z-index: -1;
-
     bottom: 0px;
+    transition: all 250ms ease;
   }
 
   .products-list-items-background-milkshake {
     background-color: #c2e297;
     min-width: 90%;
     height: 489px;
-
     border-radius: 20px;
-
     position: absolute;
-
     z-index: -1;
-
     bottom: 0px;
+    transition: all 250ms ease;
   }
 
   .products-list-items-title {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
+    font-family: var(--secondary-font);
     font-size: 20px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
-
-    /* padding-top: 20px; */
+    color: var(--main-white);
   }
 
   .products-list-items-text {
@@ -332,22 +300,97 @@
     line-height: 152%;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
-
+    color: var(--main-white);
     width: 80%;
+    height: 124px;
   }
 
   .products-list-items-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-
     border-radius: 50px;
     border: none;
-
-    color: #d41443;
-    background-color: #fff;
-
+    color: var(--main-red);
+    background-color: var(--main-white);
     margin-bottom: 40px;
+    transition: all 250ms ease;
+  }
+
+  .products-list-items-button svg {
+    width: 20px;
+    height: 15px;
+    fill: var(--main-red);
+    transition: all 250ms ease;
+    transition: all 250ms ease;
+  }
+
+  .products-list-items-spacer {
+    display: flex;
+    gap: 3px;
+  }
+
+  .three-white-small-circle-svg {
+    width: 6px;
+    height: 6px;
+    fill: var(--main-white);
+  }
+
+  .section-two-products-list-items-first:hover
+    .products-list-items-background-ice-cream {
+    box-shadow: #ffb8ca 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .section-two-products-list-items-first:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-first:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-first:hover .products-list-items-button svg {
+    fill: var(--main-white);
+  }
+
+  .section-two-products-list-items-second:hover
+    .products-list-items-background-ice-coffe {
+    box-shadow: #f0d1a5 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .section-two-products-list-items-second:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-second:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-second:hover
+    .products-list-items-button
+    svg {
+    fill: var(--main-white);
+  }
+
+  .section-two-products-list-items-third:hover
+    .products-list-items-background-milkshake {
+    box-shadow: #c2e297 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-button svg {
+    fill: var(--main-white);
   }
 
   /* SECTION 2 END */
@@ -1109,8 +1152,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding: 60px 32px 0px 32px;
+    padding: 60px 32px 60px 32px;
   }
 
   .section-two-titles {
@@ -1118,13 +1160,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 18px;
   }
 
   .section-two-titles > p {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
+    font-family: var(--secondary-font);
     font-size: 26px;
     text-transform: uppercase;
     text-align: center;
@@ -1132,13 +1172,12 @@
   }
 
   .section-two-titles > h2 {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
+    font-family: var(--secondary-font);
     font-size: 48px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
-    color: #d41443;
+    color: var(--main-red);
   }
 
   .section-two-div-products-list {
@@ -1174,43 +1213,57 @@
     position: absolute;
     z-index: -1;
     bottom: 0px;
+    transition: all 250ms ease;
   }
 
   .products-list-items-title {
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.8px;
     text-transform: uppercase;
   }
 
+  .products-list-items-spacer {
+    display: flex;
+    gap: 3px;
+  }
+
+  .three-white-small-circle-svg {
+    width: 6px;
+    height: 6px;
+    fill: var(--main-white);
+  }
+
   .products-list-items-text {
     width: 188px;
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 176%; /* 24.64px */
+    line-height: 176%;
     letter-spacing: 0.56px;
   }
 
   .products-list-items-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-
     border-radius: 50px;
     border: none;
+    background-color: var(--main-white);
+    margin-bottom: 60px;
+    transition: all 250ms ease;
+  }
 
-    color: #d41443;
-    background-color: #fff;
-
-    margin-bottom: 40px;
+  .products-list-items-button svg {
+    width: 20px;
+    height: 15px;
+    fill: var(--main-red);
+    transition: all 250ms ease;
   }
 
   .section-two-products-list-items-second {
@@ -1253,6 +1306,62 @@
     z-index: -1;
     bottom: 0px;
   }
+
+  .section-two-products-list-items-first:hover
+    .products-list-items-background-ice-cream {
+    box-shadow: #ffb8ca 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .section-two-products-list-items-first:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-first:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-first:hover .products-list-items-button svg {
+    fill: var(--main-white);
+  }
+
+  .section-two-products-list-items-second:hover
+    .products-list-items-background-ice-coffe {
+    box-shadow: #f0d1a5 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .section-two-products-list-items-second:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-second:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-second:hover
+    .products-list-items-button
+    svg {
+    fill: var(--main-white);
+  }
+
+  .section-two-products-list-items-third:hover
+    .products-list-items-background-milkshake {
+    box-shadow: #c2e297 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-button svg {
+    fill: var(--main-white);
+  }
+
   /* SECTION 2 END */
 
   /* SECTION 3 START */
@@ -2049,7 +2158,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 60px 16px 50px 16px;
   }
 
@@ -2058,30 +2166,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 16px;
   }
 
   .section-two-titles > p {
     color: #ffa5ba;
     text-align: center;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
   }
 
   .section-two-titles > h2 {
-    color: #d41443;
+    color: var(--main-red);
     text-align: center;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 58px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 3.48px;
     text-transform: uppercase;
   }
@@ -2119,18 +2220,17 @@
     position: absolute;
     z-index: -1;
     bottom: 0px;
+    transition: all 250ms ease;
   }
 
   .products-list-items-title {
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    transition: all 250ms ease;
   }
 
   .products-list-items-spacer {
@@ -2141,32 +2241,37 @@
   .three-white-small-circle-svg {
     width: 6px;
     height: 6px;
-    fill: #fff;
+    fill: var(--main-white);
   }
 
   .products-list-items-text {
     width: 304px;
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 176%; /* 28.16px */
+    line-height: 176%;
     letter-spacing: 0.64px;
   }
 
   .products-list-items-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-
     border-radius: 50px;
     border: none;
-
-    color: #d41443;
-    background-color: #fff;
-
+    background-color: var(--main-white);
     margin-bottom: 60px;
+    transition: all 250ms ease;
+  }
+
+  .products-list-items-button svg {
+    width: 20px;
+    height: 15px;
+    fill: var(--main-red);
+    transition: all 250ms ease;
   }
 
   .section-two-products-list-items-second {
@@ -2187,6 +2292,7 @@
     position: absolute;
     z-index: -1;
     bottom: 0px;
+    transition: all 250ms ease;
   }
 
   .section-two-products-list-items-third {
@@ -2207,7 +2313,64 @@
     position: absolute;
     z-index: -1;
     bottom: 0px;
+    transition: all 250ms ease;
   }
+
+  .section-two-products-list-items-first:hover
+    .products-list-items-background-ice-cream {
+    box-shadow: #ffb8ca 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .section-two-products-list-items-first:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-first:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-first:hover .products-list-items-button svg {
+    fill: var(--main-white);
+  }
+
+  .section-two-products-list-items-second:hover
+    .products-list-items-background-ice-coffe {
+    box-shadow: #f0d1a5 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .section-two-products-list-items-second:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-second:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-second:hover
+    .products-list-items-button
+    svg {
+    fill: var(--main-white);
+  }
+
+  .section-two-products-list-items-third:hover
+    .products-list-items-background-milkshake {
+    box-shadow: #c2e297 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-title {
+    transform: scale(1.2);
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-button {
+    transform: rotate(-90deg) scale(1.2);
+    background-color: var(--main-red);
+  }
+
+  .section-two-products-list-items-third:hover .products-list-items-button svg {
+    fill: var(--main-white);
+  }
+
   /* SECTION 2 END */
 
   /* SECTION 3 START */
