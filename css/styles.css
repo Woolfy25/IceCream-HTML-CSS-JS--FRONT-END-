@@ -1780,6 +1780,11 @@
     /* flex-wrap: wrap; */
   }
 
+  .logo {
+    transform: translateX(-200px);
+    transition: all 500ms ease;
+  }
+
   .nav-bar-links {
     width: 500px;
     display: flex;
@@ -1983,6 +1988,12 @@
     z-index: 4;
   }
 
+  .white-small-circle-svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+
   .number-of-stores {
     position: absolute;
     top: 70px;
@@ -2163,6 +2174,17 @@
     line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+  }
+
+  .products-list-items-spacer {
+    display: flex;
+    gap: 3px;
+  }
+
+  .three-white-small-circle-svg {
+    width: 6px;
+    height: 6px;
+    fill: #fff;
   }
 
   .products-list-items-text {
@@ -2372,13 +2394,14 @@
   .informations-list-svg {
     width: 50px;
     height: 50px;
-    /* stroke: #ffa5ba; */
+    fill: #ffa5ba;
   }
 
-  .informations-list-svg-use {
+  .informations-list-svg-glazed {
     width: 50px;
     height: 50px;
-    /* stroke: #ffa5ba; */
+    stroke: #ffa5ba;
+    fill: none;
   }
 
   .informations-list-title {
