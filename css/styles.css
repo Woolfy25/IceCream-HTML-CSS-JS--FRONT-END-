@@ -22,16 +22,13 @@
 /* PHONE FIRST */
 @media screen and (max-width: 428px) {
   /* HEADER START*/
-  header {
-    width: 100%;
-  }
-
   .header {
+    width: 100%;
     background-color: #ffb8ca;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 10px 17px 0px 17px;
+    padding: 10px 0px 0px 20px;
   }
 
   .nav-bar {
@@ -45,33 +42,36 @@
     width: 199px;
     height: 50px;
     position: relative;
-
     transition: all 250ms ease;
   }
 
   .logo:hover,
   .logo:focus {
-    top: 2px;
+    transform: translateY(-10px);
+  }
+
+  .nav-bar-links {
+    display: none;
   }
 
   .burger-menu {
     width: 20px;
-    height: 12px;
+    height: 20px;
+    stroke: var(--main-red);
+    margin-right: 20px;
   }
 
   .hero-page {
     display: flex;
     flex-direction: column;
-
     position: relative;
+    overflow: hidden;
   }
 
   .hero-items-div {
     display: flex;
     flex-direction: column;
-
     gap: 25px;
-
     margin: 150px 0px 150px 0px;
   }
 
@@ -81,86 +81,75 @@
   }
 
   .hero-page-p-pasion {
-    width: 80%;
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
+    max-width: 220px;
+    font-family: var(--secondary-font);
     font-size: 26px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fff;
-
+    color: var(--main-white);
     z-index: 3;
   }
 
   .hero-page-p-pasion > span {
-    font-family: "Titan One", sans-serif;
+    font-family: var(--secondary-font);
     font-size: 48px;
     line-height: 96%;
-    color: #d41443;
+    color: var(--main-red);
   }
 
   .hero-page-products-button {
     width: 62px;
     height: 24px;
-
-    font-weight: 400;
     font-size: 8px;
     text-align: center;
-    color: #fff;
-    background-color: #d41443;
-
+    color: var(--main-white);
+    background-color: var(--main-red);
     border: none;
     border-radius: 50px;
-
     z-index: 3;
     transition: all 250ms ease;
   }
 
   .hero-page-products-button:hover,
   .hero-page-products-button:focus {
-    background-color: #fff;
-    color: #d41443;
+    background-color: var(--main-white);
+    color: var(--main-red);
   }
 
   .hero-page-howitsmade-button {
     width: 82px;
     height: 24px;
-
-    font-weight: 400;
     font-size: 8px;
     text-align: center;
-    color: #d41443;
-
+    color: var(--main-red);
+    background-color: var(--main-white);
     border: none;
     border-radius: 50px;
-
     z-index: 3;
     transition: all 250ms ease;
   }
 
   .hero-page-howitsmade-button:hover,
   .hero-page-howitsmade-button:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
   }
 
   .image-ice-cream-stack {
     position: absolute;
-
     bottom: 0px;
     right: 20px;
-
     width: 171px;
     height: 410px;
-
     z-index: 2;
   }
 
   .hero-big-circle-svg {
-    right: -17px;
-    top: 40px;
-
+    width: 344px;
+    height: 344px;
+    right: -60px;
+    top: 35px;
+    fill: #ffa5ba;
     position: absolute;
-
     z-index: 1;
   }
 
@@ -851,17 +840,24 @@
 
 @media screen and (min-width: 429px) and (max-width: 768px) {
   /* HEADER START */
-  header {
-    width: 100%;
-  }
-
   .header {
+    width: 100%;
     background-color: #ffb8ca;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
     padding: 32px 32px 0px 32px;
+  }
+
+  .logo {
+    width: 199px;
+    height: 50px;
+    z-index: 2;
+    transition: all 250ms ease;
+  }
+
+  .logo:hover {
+    transform: translateY(-10px);
   }
 
   .nav-bar {
@@ -870,11 +866,22 @@
     align-items: center;
   }
 
+  .nav-bar-links {
+    display: none;
+  }
+
   .nav-right-side {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 32px;
+  }
+
+  .burger-menu {
+    width: 20px;
+    height: 12px;
+    stroke: var(--main-red);
+    z-index: 2;
   }
 
   .header-buynow {
@@ -885,16 +892,16 @@
     background: #fff;
     color: #d41443;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    z-index: 2;
+    transition: all 250ms ease;
   }
 
   .header-buynow:hover,
   .header-buynow:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
+    transform: scale(1.1);
   }
 
   .hero-page {
@@ -906,29 +913,23 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-
     margin: 20px 0px 190px 0px;
   }
 
   .hero-page-p-pasion {
     width: 162px;
-    color: #fff;
-    font-family: "Titan One";
+    color: var(--main-white);
+    font-family: var(--secondary-font);
     font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.88px;
     text-transform: uppercase;
     z-index: 3;
   }
 
   .hero-page-p-pasion > span {
-    color: #d41443;
-    font-family: "Titan One";
+    color: var(--main-red);
+    font-family: var(--secondary-font);
     font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 90.5%;
     letter-spacing: 1.36px;
     text-transform: uppercase;
@@ -942,21 +943,21 @@
   .hero-page-products-button {
     width: 62px;
     height: 24px;
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 8px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background-color: #d41443;
+    background-color: var(--main-red);
     border-radius: 50px;
+    border: none;
+    z-index: 3;
+    transition: all 250ms ease;
   }
 
   .hero-page-products-button:hover,
   .hero-page-products-button:focus {
-    background-color: #fff;
-    color: #d41443;
+    background-color: var(--main-white);
+    color: var(--main-red);
+    transform: scale(1.1);
   }
 
   .hero-page-howitsmade-button {
@@ -965,7 +966,8 @@
     font-weight: 400;
     font-size: 8px;
     text-align: center;
-    color: #d41443;
+    color: var(--main-red);
+    background-color: var(--main-white);
     border: none;
     border-radius: 50px;
     z-index: 3;
@@ -974,60 +976,53 @@
 
   .hero-page-howitsmade-button:hover,
   .hero-page-howitsmade-button:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
+    transform: scale(1.1);
   }
 
   .image-ice-cream-stack {
     position: absolute;
-
     bottom: 0px;
     left: 50%;
-
     width: 143px;
     height: 336px;
-
     z-index: 2;
   }
 
   .hero-big-circle-svg {
-    width: 335px;
-    height: 335px;
-
-    left: 250px;
-    bottom: 40px;
-
+    width: 330px;
+    height: 330px;
+    fill: #ffa5ba;
+    bottom: 50px;
+    right: 20%;
     position: absolute;
-
-    z-index: 1;
   }
 
   .bio-milk {
     position: absolute;
     bottom: 16px;
+    width: 152px;
+    height: 152px;
   }
 
   .header-icecream-text {
     position: absolute;
     left: 150px;
     bottom: 81px;
-
     width: 114px;
     height: 48px;
-    color: #fff;
-    font-family: "DM Sans";
+    color: var(--main-white);
     font-size: 8px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 12px */
-
-    z-index: 4;
+    line-height: 150%;
+    z-index: 3;
   }
 
   .tasty-woman {
     position: absolute;
     right: 10px;
     bottom: 0;
-
+    width: 190px;
+    height: 150px;
     z-index: 4;
   }
 
@@ -1035,7 +1030,6 @@
     position: absolute;
     top: 10px;
     right: 0;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1048,30 +1042,25 @@
   }
 
   .number-of-cafes h3 {
-    color: #d41443;
+    color: var(--main-red);
+    font-family: var(--secondary-font);
     text-align: right;
-    font-family: "Titan One";
     font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.12px;
     text-transform: uppercase;
-
     z-index: 3;
   }
 
   .number-of-cafes p {
-    color: #fff;
+    color: var(--main-white);
     text-align: right;
-    font-family: "DM Sans";
     font-size: 8px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
 
-  .number-of-cafes svg {
+  .white-small-circle-svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--main-white);
     position: absolute;
     top: 0;
     right: -5px;
@@ -1084,30 +1073,25 @@
   }
 
   .number-of-foodtrucks h3 {
-    color: #d41443;
+    color: var(--main-red);
     text-align: right;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.12px;
     text-transform: uppercase;
-
     z-index: 3;
   }
 
   .number-of-foodtrucks p {
-    color: #fff;
+    color: var(--main-white);
     text-align: right;
-    font-family: "DM Sans";
     font-size: 8px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
 
   .number-of-foodtrucks svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--main-white);
     position: absolute;
     top: 0;
     right: -5px;
@@ -1768,11 +1752,8 @@
   }
 
   /* HEADER START */
-  header {
-    max-width: 100%;
-  }
-
   .header {
+    max-width: 100%;
     background-color: #ffb8ca;
     display: flex;
     justify-content: space-between;
@@ -1921,6 +1902,7 @@
     width: 136px;
     height: 40px;
     color: var(--main-red);
+    background-color: var(--main-white);
     text-align: center;
     font-size: 14px;
     border: none;
