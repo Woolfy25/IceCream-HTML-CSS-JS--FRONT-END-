@@ -1,3 +1,11 @@
+:root {
+  --main-red: #d41443;
+  --main-white: #fff;
+  --hover-button: #ecebeb;
+  --main-font: "DM Sans", sans-serif;
+  --secondary-font: "Titan One", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
@@ -5,6 +13,10 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* PHONE FIRST */
@@ -19,7 +31,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
     padding: 10px 17px 0px 17px;
   }
 
@@ -35,7 +46,7 @@
     height: 50px;
     position: relative;
 
-    transition: all 500ms ease;
+    transition: all 250ms ease;
   }
 
   .logo:hover,
@@ -102,7 +113,7 @@
     border-radius: 50px;
 
     z-index: 3;
-    transition: all 500ms ease;
+    transition: all 250ms ease;
   }
 
   .hero-page-products-button:hover,
@@ -124,7 +135,7 @@
     border-radius: 50px;
 
     z-index: 3;
-    transition: all 500ms ease;
+    transition: all 250ms ease;
   }
 
   .hero-page-howitsmade-button:hover,
@@ -958,7 +969,7 @@
     border: none;
     border-radius: 50px;
     z-index: 3;
-    transition: all 500ms ease;
+    transition: all 250ms ease;
   }
 
   .hero-page-howitsmade-button:hover,
@@ -1766,7 +1777,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
     padding: 32px 32px 0px 32px;
   }
 
@@ -1777,12 +1787,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
   }
 
   .logo {
-    transform: translateX(-200px);
-    transition: all 500ms ease;
+    width: 199px;
+    height: 50px;
+    transition: all 250ms ease;
+  }
+
+  .logo:hover {
+    transform: translateY(-10px);
   }
 
   .nav-bar-links {
@@ -1790,16 +1804,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 35px; */
+  }
+
+  .nav-bar-links li {
+    transition: all 250ms ease;
+  }
+
+  .nav-bar-links li:hover {
+    transform: scale(1.1);
   }
 
   .nav-bar-links li a {
-    color: #fff;
-    font-family: "DM Sans";
+    color: var(--main-white);
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+  }
+
+  .nav-bar-links li:hover a {
+    color: var(--main-red);
+  }
+
+  .nav-bar-links li:first-child a {
+    color: var(--main-red);
   }
 
   .nav-right-side {
@@ -1818,19 +1844,19 @@
     height: 44px;
     border: none;
     border-radius: 22px;
-    background: #fff;
-    color: #d41443;
+    background: var(--main-white);
+    color: var(--main-red);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+
+    transition: all 250ms ease;
   }
 
   .header-buynow:hover,
   .header-buynow:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
+    transform: scale(1.1);
   }
 
   .hero-page {
@@ -1838,24 +1864,21 @@
     flex-direction: column;
     position: relative;
   }
+
   .hero-items-div {
     position: relative;
     z-index: 5;
     display: flex;
     flex-direction: column;
     gap: 24px;
-
     margin: 60px 0px 315px 0px;
   }
 
   .hero-page-p-pasion {
     width: 277px;
-    color: #fff;
-    font-family: "Titan One";
+    color: var(--main-white);
+    font-family: var(--secondary-font);
     font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.52px;
     text-transform: uppercase;
     z-index: 3;
@@ -1863,10 +1886,8 @@
 
   .hero-page-p-pasion > span {
     color: #d41443;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 58px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 90.5%;
     letter-spacing: 2.32px;
     text-transform: uppercase;
@@ -1880,77 +1901,55 @@
   .hero-page-products-button {
     width: 107px;
     height: 40px;
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background-color: #d41443;
-
+    background-color: var(--main-red);
     border: none;
     border-radius: 50px;
+    transition: all 250ms ease;
   }
 
   .hero-page-products-button:hover,
   .hero-page-products-button:focus {
-    background-color: #fff;
-    color: #d41443;
+    background-color: var(--main-white);
+    color: var(--main-red);
+    transform: scale(1.1);
   }
 
   .hero-page-howitsmade-button {
     width: 136px;
     height: 40px;
-    color: #d41443;
+    color: var(--main-red);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
     border: none;
     border-radius: 50px;
-    z-index: 3;
-    transition: all 500ms ease;
+    transition: all 250ms ease;
   }
 
   .hero-page-howitsmade-button:hover,
   .hero-page-howitsmade-button:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
+    transform: scale(1.1);
   }
 
   .image-ice-cream-stack {
     position: absolute;
-
     bottom: 0px;
     left: 50%;
-
     width: 236px;
     height: 557px;
-
     z-index: 2;
   }
 
   .hero-big-circle-svg {
     width: 534px;
     height: 534px;
-    /* color: #000; */
     fill: #ffa5ba;
-
     right: 100px;
-    /* left: 450px; */
     bottom: 84px;
-
     position: absolute;
-
-    /* z-index: 10; */
-  }
-
-  .hero-big-circle-svg-use {
-    width: 534px;
-    height: 534px;
   }
 
   .bio-milk {
@@ -1964,16 +1963,11 @@
     position: absolute;
     left: 200px;
     bottom: 130px;
-
     width: 200px;
     height: 78px;
     color: #fff;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 19.6px */
-
+    line-height: 140%;
     z-index: 6;
   }
 
@@ -1981,24 +1975,21 @@
     position: absolute;
     right: 10px;
     bottom: 0;
-
     width: 304px;
     height: 241px;
-
     z-index: 4;
   }
 
   .white-small-circle-svg {
     width: 30px;
     height: 30px;
-    fill: #fff;
+    fill: var(--main-white);
   }
 
   .number-of-stores {
     position: absolute;
     top: 70px;
     right: 0;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -2011,27 +2002,19 @@
   }
 
   .number-of-cafes h3 {
-    color: #d41443;
+    color: var(--main-red);
     text-align: right;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 46px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.84px;
     text-transform: uppercase;
-
     z-index: 3;
   }
 
   .number-of-cafes p {
-    color: #fff;
+    color: var(--main-white);
     text-align: right;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
 
   .number-of-cafes svg {
@@ -2049,27 +2032,19 @@
   }
 
   .number-of-foodtrucks h3 {
-    color: #d41443;
+    color: var(--main-red);
     text-align: right;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 46px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.84px;
     text-transform: uppercase;
-
     z-index: 3;
   }
 
   .number-of-foodtrucks p {
-    color: #fff;
+    color: var(--main-white);
     text-align: right;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
 
   .number-of-foodtrucks svg {
