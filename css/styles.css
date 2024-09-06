@@ -896,23 +896,17 @@
     width: 232px;
     height: 42px;
     color: #ffa5ba;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     text-transform: uppercase;
   }
 
   .footer-slogan h3 {
     width: 200px;
     height: 76px;
-    color: #d41443;
-    font-family: "Titan One";
+    color: var(--main-red);
+    font-family: var(--secondary-font);
     font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.36px;
     text-transform: uppercase;
   }
@@ -926,11 +920,26 @@
     gap: 40px;
   }
 
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .social-media-svg {
+    width: 34px;
+    height: 34px;
+    fill: var(--main-white);
+    transition: all 250ms ease;
+  }
+
+  .social-media-svg:hover {
+    transform: scale(1.2);
+  }
+
   .footer-contacts a {
-    color: #d41443;
-    font-family: "DM Sans";
+    color: var(--main-red);
     font-size: 12px;
-    font-style: normal;
     font-weight: 700;
     line-height: 186%;
   }
@@ -938,11 +947,9 @@
   .footer-contacts a span {
     color: #000;
     text-align: right;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 186%; /* 22.32px */
+    line-height: 186%;
   }
 
   .copyright {
@@ -950,11 +957,9 @@
     width: 280px;
     color: #907e82;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 152%; /* 21.28px */
+    line-height: 152%;
   }
 
   /* FOOTER END */
@@ -1939,7 +1944,6 @@
   .footer-container {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
   }
 
@@ -1953,64 +1957,72 @@
   .footer-slogan p {
     max-width: 340px;
     color: #ffa5ba;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.04px;
     text-transform: uppercase;
   }
 
   .footer-slogan h3 {
     max-width: 340px;
-    color: #d41443;
-    font-family: "Titan One";
+    color: var(--main-red);
+    font-family: var(--secondary-font);
     font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 2.88px;
     text-transform: uppercase;
   }
 
   .footer-contacts {
-    margin-top: 60px;
-    margin-bottom: 56px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 40px;
   }
 
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .social-media-svg {
+    width: 34px;
+    height: 34px;
+    fill: var(--main-white);
+    transition: all 250ms ease;
+  }
+
+  .social-media-svg:hover {
+    transform: scale(1.2);
+  }
+
   .footer-contacts a {
-    color: #d41443;
-    font-family: "DM Sans";
+    color: var(--main-red);
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 186%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .footer-contacts a span {
     color: #000;
     text-align: right;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 186%; /* 26.04px */
+    line-height: 186%;
   }
 
   .copyright {
-    margin: auto;
-    width: 280px;
+    margin-top: 48px;
+    margin-right: auto;
+    margin-left: auto;
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 186%; /* 26.04px */
+    line-height: 186%;
     letter-spacing: 0.28px;
   }
 
@@ -3040,8 +3052,8 @@
   .footer-container {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
+    /* flex-wrap: wrap; */
   }
 
   .footer-slogan {
@@ -3054,53 +3066,59 @@
   .footer-slogan p {
     max-width: 475px;
     color: #ffa5ba;
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
   }
 
   .footer-slogan h3 {
     max-width: 480px;
-    color: #d41443;
-    font-family: "Titan One";
+    color: var(--main-red);
+    font-family: var(--secondary-font);
     font-size: 58px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 3.48px;
     text-transform: uppercase;
   }
 
   .footer-contacts {
-    margin-top: 15px;
-    /* margin-bottom: 56px; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 40px;
   }
 
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .social-media-svg {
+    width: 34px;
+    height: 34px;
+    fill: var(--main-white);
+    transition: all 250ms ease;
+  }
+
+  .social-media-svg:hover {
+    transform: scale(1.2);
+  }
+
   .footer-contacts a {
-    color: #d41443;
-    font-family: "DM Sans";
+    color: var(--main-red);
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 186%;
     letter-spacing: 0.32px;
+    width: 325px;
   }
 
   .footer-contacts a span {
     color: #000;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
     letter-spacing: 0.32px;
   }
 
@@ -3108,13 +3126,10 @@
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    width: 280px;
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 186%; /* 26.04px */
+    line-height: 186%;
     letter-spacing: 0.28px;
   }
 
