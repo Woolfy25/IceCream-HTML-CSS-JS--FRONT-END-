@@ -668,40 +668,43 @@
 
   .user-review {
     margin-top: 70px;
-
-    width: 157px;
-    height: 213px;
-
-    color: #000;
+    width: 300px;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 260%; /* 31.2px */
+    line-height: 260%;
     letter-spacing: 0.48px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 10px 50px;
+    z-index: 2;
+  }
+
+  .user-review svg {
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: #e1e1e1;
+    z-index: 1;
   }
 
   .reviews-slider {
-    margin-top: 60px;
-    color: red;
+    margin-top: 16px;
+    color: var(--main-red);
     font-weight: 800;
     font-size: 30px;
   }
 
   .user-information {
     margin-top: 16px;
-
     width: 172px;
     height: 25px;
-
-    color: #000;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 26.04px */
+    line-height: 186%;
   }
 
   /* SECTION 5 END */
@@ -726,32 +729,28 @@
   .location {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-
     padding: 40px 0px 40px 32px;
-
     width: 280px;
-    height: 412px;
-
     border-radius: 24px;
     background: #fff;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    transition: all 250ms ease;
+  }
+
+  .location:hover {
+    box-shadow: var(--main-red) 0px 20px 30px -10px;
+    transform: scale(1.05);
   }
 
   .location-title {
     border-radius: 4px;
     background: #f0d1a5;
-
     width: 80px;
-    height: 16px;
-
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 22.32px */
+    line-height: 186%;
     letter-spacing: 0.48px;
   }
 
@@ -768,25 +767,19 @@
 
   .location-info h3 {
     width: 75px;
-    color: #000;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 22.32px */
+    line-height: 186%;
     letter-spacing: 0.48px;
   }
 
   .location-info p {
     width: 216px;
     height: 36px;
-
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 18px; /* 150% */
+    line-height: 18px;
     letter-spacing: 0.48px;
   }
 
@@ -799,24 +792,18 @@
 
   .location-available-days {
     width: 150px;
-    color: #000;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 22.32px */
+    line-height: 186%;
   }
 
   .location-available-hours {
     width: 161px;
     height: 23px;
-
     color: #ffa5ba;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 22.32px */
+    line-height: 186%;
   }
 
   .location-contact {
@@ -828,13 +815,10 @@
   .location-contact a {
     width: 179px;
     height: 18px;
-
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 18px; /* 150% */
+    line-height: 18px;
   }
 
   .locations-buttons-list {
@@ -849,21 +833,19 @@
     width: 162px;
     height: 44px;
     border-radius: 22px;
-    background: #d41342;
-
-    color: #fff;
+    background: var(--main-red);
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    transition: all 250ms ease;
   }
 
   .locations-button:hover,
   .locations-button:focus {
-    background-color: #fff;
-    color: #d41443;
+    background-color: var(--main-white);
+    color: var(--main-red);
+    transform: scale(1.1);
   }
 
   .franchise-button {
@@ -871,20 +853,18 @@
     width: 162px;
     height: 44px;
     border-radius: 22px;
-    background: #fff;
-
-    color: #d41342;
+    background: var(--main-white);
+    color: var(--main-red);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    transition: all 250ms ease;
   }
 
   .franchise-button:hover,
   .franchise-button:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
+    transform: scale(1.1);
   }
 
   /* SECTION 6 END */
@@ -1742,39 +1722,43 @@
 
   .user-review {
     margin-top: 57px;
-    width: 492px;
-    height: 83px;
-
-    color: #000;
+    max-width: 620px;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 214%; /* 29.96px */
+    line-height: 214%;
     letter-spacing: 0.56px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 10px 70px;
+    z-index: 2;
+  }
+
+  .user-review svg {
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    fill: #e1e1e1;
+    z-index: 1;
   }
 
   .reviews-slider {
-    margin-top: 40px;
-    color: red;
+    margin-top: 8px;
+    color: var(--main-red);
     font-weight: 800;
     font-size: 30px;
   }
 
   .user-information {
     margin-top: 16px;
-
     width: 172px;
     height: 25px;
-
-    color: #000;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
   }
 
   /* SECTION 5 END */
@@ -1801,32 +1785,29 @@
   .location {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-
     padding: 40px 0px 40px 32px;
-
     width: 224px;
-    /* height: 528px; */
-
     border-radius: 24px;
     background: #fff;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    transition: all 250ms ease;
+  }
+
+  .location:hover {
+    box-shadow: var(--main-red) 0px 20px 30px -10px;
+    transform: scale(1.05);
   }
 
   .location-title {
     border-radius: 4px;
     background: #f0d1a5;
-
     width: 80px;
     height: 28px;
-
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
     letter-spacing: 0.64px;
   }
 
@@ -1843,25 +1824,19 @@
   }
 
   .location-info h3 {
-    color: #000;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 26.04px */
+    line-height: 186%;
     letter-spacing: 0.56px;
   }
 
   .location-info p {
     width: 176px;
     height: 65px;
-
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 166%; /* 23.24px */
+    line-height: 166%;
     letter-spacing: 0.56px;
   }
 
@@ -1874,24 +1849,18 @@
 
   .location-available-days {
     width: 150px;
-    color: #000;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 22.32px */
+    line-height: 186%;
   }
 
   .location-available-hours {
     width: 161px;
     height: 23px;
-
     color: #ffa5ba;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 22.32px */
+    line-height: 186%;
   }
 
   .location-contact {
@@ -1903,17 +1872,13 @@
   .location-contact a {
     width: 179px;
     height: 18px;
-
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 18px; /* 150% */
+    line-height: 18px;
   }
 
   .locations-buttons-list {
-    /* margin-top: 60px; */
     display: flex;
     flex-direction: row;
     gap: 14px;
@@ -1924,21 +1889,19 @@
     width: 192px;
     height: 44px;
     border-radius: 22px;
-    background: #d41342;
-
-    color: #fff;
+    background: var(--main-red);
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    transition: all 250ms ease;
   }
 
   .locations-button:hover,
   .locations-button:focus {
-    background-color: #fff;
-    color: #d41443;
+    background-color: var(--main-white);
+    color: var(--main-red);
+    transform: scale(1.1);
   }
 
   .franchise-button {
@@ -1946,20 +1909,18 @@
     width: 174px;
     height: 44px;
     border-radius: 22px;
-    background: #fff;
-
-    color: #d41443;
+    background: var(--main-white);
+    color: var(--main-red);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    transition: all 250ms ease;
   }
 
   .franchise-button:hover,
   .franchise-button:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
+    transform: scale(1.1);
   }
   /* SECTION 6 END */
 
@@ -2860,39 +2821,44 @@
 
   .user-review {
     margin-top: 63px;
-
-    max-width: 750px;
-
+    max-width: 800px;
     color: #000;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
     letter-spacing: 0.64px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 15px 100px;
+    z-index: 2;
+  }
+
+  .user-review svg {
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    fill: #e1e1e1;
+    z-index: 1;
   }
 
   .reviews-slider {
-    margin-top: 47px;
-    color: red;
+    margin-top: 15px;
+    color: var(--main-red);
     font-weight: 800;
     font-size: 35px;
   }
 
   .user-information {
     margin-top: 16px;
-
     width: 190px;
     height: 31px;
-
-    color: #000;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 37.2px */
+    line-height: 186%;
   }
 
   /* SECTION 5 END */
@@ -2919,32 +2885,29 @@
   .location {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-
     padding: 40px 0px 40px 40px;
-
     width: 368px;
-    /* height: 528px; */
-
     border-radius: 24px;
     background: #fff;
-    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    box-shadow: 0px 8px 30px 0px #d414431a;
+    transition: all 250ms ease;
+  }
+
+  .location:hover {
+    box-shadow: var(--main-red) 0px 20px 30px -10px;
+    transform: scale(1.05);
   }
 
   .location-title {
     border-radius: 4px;
     background: #f0d1a5;
-
     width: 80px;
     height: 28px;
-
     color: #fff;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
     letter-spacing: 0.64px;
   }
 
@@ -2961,25 +2924,19 @@
   }
 
   .location-info h3 {
-    color: #000;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
     letter-spacing: 0.64px;
   }
 
   .location-info p {
     max-width: 288px;
     height: 65px;
-
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 183%; /* 29.28px */
+    line-height: 183%;
     letter-spacing: 0.64px;
   }
 
@@ -2992,25 +2949,19 @@
 
   .location-available-days {
     width: 170px;
-    color: #000;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
     letter-spacing: 0.64px;
   }
 
   .location-available-hours {
     width: 170px;
     height: 23px;
-
     color: #ffa5ba;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
+    line-height: 186%;
   }
 
   .location-contact {
@@ -3022,17 +2973,13 @@
   .location-contact a {
     width: 179px;
     height: 18px;
-
     color: #907e82;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 183%; /* 29.28px */
+    line-height: 183%;
   }
 
   .locations-buttons-list {
-    /* margin-top: 60px; */
     display: flex;
     flex-direction: row;
     gap: 14px;
@@ -3043,21 +2990,19 @@
     width: 198px;
     height: 44px;
     border-radius: 22px;
-    background: #d41342;
-
-    color: #fff;
+    background: var(--main-red);
+    color: var(--main-white);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    transition: all 250ms ease;
   }
 
   .locations-button:hover,
   .locations-button:focus {
-    background-color: #fff;
-    color: #d41443;
+    background-color: var(--main-white);
+    color: var(--main-red);
+    transform: scale(1.1);
   }
 
   .franchise-button {
@@ -3065,20 +3010,18 @@
     width: 174px;
     height: 44px;
     border-radius: 22px;
-    background: #fff;
-
-    color: #d41443;
+    background: var(--main-white);
+    color: var(--main-red);
     text-align: center;
-    font-family: "DM Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    transition: all 250ms ease;
   }
 
   .franchise-button:hover,
   .franchise-button:focus {
-    background-color: #ffdede;
+    background-color: var(--hover-button);
+    transform: scale(1.1);
   }
   /* SECTION 6 END */
 
