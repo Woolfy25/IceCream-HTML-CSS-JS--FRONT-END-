@@ -313,6 +313,11 @@
         </p>
         <p class="reviews-slider">. . .</p>
         <p class="user-information">Emily, Los Angeles</p>
+        <div class="reviews-slider">
+          <svg class="reviews-slider-svg"><use href="./images/svgsprite.svg#smallwhitecircle"></use></svg>
+          <svg class="reviews-slider-svg"><use href="./images/svgsprite.svg#smallwhitecircle"></use></svg>
+          <svg class="reviews-slider-svg"><use href="./images/svgsprite.svg#smallwhitecircle"></use></svg>
+        </div>
       </section>
       <!-- SECTION 6 -->
       <section id="contact" class="locations">
@@ -419,7 +424,7 @@
     </footer>
     <!-- MODAL MENU -->
     <div class="modal-burger-menu">
-      <div class="overlay">
+      <div class="overlay-burger">
         <div class="modal-burger-container">
           <svg class="modal-burger-close-button"><use href="./images/svgsprite.svg#x-close"></use></svg>
           <div class="modal-burger-buynow">
@@ -445,7 +450,55 @@
         </div>
       </div>
     </div>
+    <!-- MODAL BUY MENU -->
+     <div class="modal-buynow-menu">
+      <div class="overlay-buynow">
+        <div class="modal-buynow-container">
+          <svg class="modal-buynow-close-button"><use href="./images/svgsprite.svg#x-close"></use></svg>
+          <h2 class="modal-buynow-title">Super pyper Ice Cream</h2>
+          <form class="form">
+            <div class="buynow-types-container">
+              <div class="buynow-types">
+                <label for="icecream"><img src="./images/cone-icecream-big.png" alt="ice cream stack"></label>
+                <input type="text" id="icecream" name="icecream" placeholder="how many?">
+              </div>
+              <div class="buynow-types">
+                <label for="icecoffe"><img src="./images/ice-cofe-big.png" alt="ice cofee"></label>
+                <input type="text" id="icecoffe" name="icecoffe" placeholder="how many?">
+              </div>
+              <div class="buynow-types">
+                <label for="milkshake"><img src="./images/shake-big.png" alt="milkshake"></label>
+                <input type="text" id="milkshake" name="milkshake" placeholder="how many?">
+              </div>
+            </div>
+            <div class="form-details">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+              <label for="phone">Phone Number</label>
+              <input type="rel" id="phone" name="phone">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+              <textarea name="message" id="message" placeholder="write something and maybe we read this"></textarea>
+              <button type="submit">I want that!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+     </div>
+     <!-- MODAL LOCATION -->
+     <div class="modal-location">
+        <div class="overlay-location">
+          <div class="location-container">
+            <svg class="modal-location-close-button"><use href="./images/svgsprite.svg#x-close"></use></svg>
+            <h2 class="modal-location-title">We will be glad to see you</h2>
+            <div class="modal-location-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87471.77140809415!2d23.609539935326676!3d46.75518094578792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sro!2sro!4v1725742247322!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="modal-location-text">Cluj, Romania</p>
+          </div>
+        </div>
+     </div>
     <!-- SCRIPT -->
-    <script src=""></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
